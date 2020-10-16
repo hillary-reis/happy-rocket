@@ -1,0 +1,25 @@
+{
+  "name": "happy-rocket",
+  "version": "1.0.0",
+  "description": "Projeto elaborado durante a semana Next Level Week #3",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hillary-reis/happy-rocket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hillary-reis/happy-rocket/issues"
+  },
+  "homepage": "https://github.com/hillary-reis/happy-rocket#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "nodemon": "^2.0.5"
+  }
+}
