@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="pt_BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,7 +35,7 @@
       </aside>
 
       <main class="animate-appear with-sidebar">
-        <form action="">
+        <form action="save-orphanage" method="POST" onsubmit="validate(event)">
           <fieldset>
 
             <legend> Dados </legend>
@@ -76,7 +76,7 @@
 
               <div class="images-upload" id="images">
                 <div class="new-upload">
-                  <input name="images" placeholder="Cole o link da foto aqui" required>
+                  <input type="url" name="images" placeholder="Cole o link da foto aqui" required>
                   <span onclick="deleteField(event)">
                     <img src="/images/remove-file.svg" alt="Remover Foto">
                   </span>

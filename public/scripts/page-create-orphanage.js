@@ -82,15 +82,24 @@ function toggleSelect (event) {
 
   // retirar a class active
   document.querySelectorAll('.button-select button').forEach(button => button.classList.remove('active'));
-  
-  // verificar se é sim ou Não
-  input.value = button.dataset.value;
 
   // atualizar o input hidden com o valor selecionado
   const input = document.querySelector('[name="open_on_weekends"');
 
+  // verificar se é sim ou Não
+  input.value = button.dataset.value;
 
   // colocar a class active no botão clicado
   button.classList.add('active');
 
+};
+
+function validate (event) {
+  // validar se lat e lng estão preenchidos
+  const needsLatAndLng = true
+
+  if (needsLatAndLng) {
+    event.preventDefalut()
+    alert('Selecione um ponto no mapa')
+  }
 };
